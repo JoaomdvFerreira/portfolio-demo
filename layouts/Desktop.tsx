@@ -10,7 +10,6 @@ export const Desktop: React.FC = () => {
               LET´S START OUR WORK <span className="text-blue">TOGETHER.</span>
             </p>
           </div>
-          {/* Desktop */}
           <div className="relative hidden sm:flex">
             <Image
               src={'/images/second_section1.jpg'}

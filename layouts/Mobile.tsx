@@ -10,7 +10,6 @@ export const Mobile: React.FC = () => {
               LET´S START OUR WORK <span className="text-blue">TOGETHER.</span>
             </p>
           </div>
-          {/* Mobile */}
           <div className="flex justify-end relative mb-6">
             <Image
               src={'/images/second_section1.jpg'}

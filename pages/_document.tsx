@@ -16,6 +16,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pathway+Gothic+One&display=swap"
             rel="stylesheet"
           />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

@@ -9,10 +9,6 @@ const Home: NextPage = () => {
   const { width, height } = useWindowDimensions();
   return (
     <div className="flex min-h-screen flex-col min-w-screen max-w-screen lg:container lg:mx-auto lg:px-4 xl:container xl:mx-auto xl:px-36">
-      <Head>
-        <title>Laura</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <section className="h-screen bg-mobile sm:bg-none sm:block sm:before:content-none sm:h-full">
         <div className="h-full p-16 flex flex-col justify-between sm:block sm:pb-12 relative">
           <div>
