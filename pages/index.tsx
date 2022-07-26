@@ -9,10 +9,15 @@ const Home: NextPage = () => {
   const { width, height } = useWindowDimensions();
   return (
     <div className="flex min-h-screen flex-col min-w-screen max-w-screen lg:container lg:mx-auto lg:px-4 xl:container xl:mx-auto xl:px-36">
+      <Head>
+        <title>Laura</title>
+      </Head>
       <section className="h-screen bg-mobile sm:bg-none sm:block sm:before:content-none sm:h-full">
         <div className="h-full p-16 flex flex-col justify-between sm:block sm:pb-12 relative">
           <div>
-            <p className="font-cursive text-blue text-5xl font-bold">Laura</p>
+            <p className="font-cursive text-darkBlue text-5xl font-bold">
+              Laura
+            </p>
           </div>
           <div className="sm:flex sm:pt-16 sm:pb-0 relative">
             <div className="sm:mt-14 sm:ml-12 sm:z-30">
@@ -20,7 +25,7 @@ const Home: NextPage = () => {
                 Hi! Welcome!
               </h1>
               <p className="text-2xl ">You finally found me :)</p>
-              <p className="text-2xl ">I've been waiting for you...</p>
+              <p className="text-2xl text-blue">I've been waiting for you...</p>
             </div>
             <div className="hidden sm:block opacity-90 absolute right-8 top-20">
               <Image
