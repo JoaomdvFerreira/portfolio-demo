@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export const Desktop: React.FC = () => {
+  const router = useRouter();
   return (
     <>
       <section className="h-screen bg-beige sm:h-full">
@@ -224,15 +226,33 @@ export const Desktop: React.FC = () => {
             <div className="flex justify-around text-center">
               <div>
                 <p className="font-cursive text-lg">Instagram</p>
-                <p>@laura.trigueirao</p>
+                <button
+                  onClick={() =>
+                    router.push('https://www.instagram.com/laura.trigueirao/')
+                  }
+                >
+                  @laura.trigueirao
+                </button>
               </div>
               <div>
                 <p className="font-cursive text-lg">Behance</p>
-                <p>@laura.trigueirao</p>
+                <button
+                  onClick={() =>
+                    router.push('https://www.behance.net/trigueiraolaura')
+                  }
+                >
+                  @laura.trigueirao
+                </button>
               </div>
               <div>
                 <p className="font-cursive text-lg">Email</p>
-                <p>@laura.trigueira</p>
+                <button
+                  onClick={() =>
+                    router.push('mailto:laura.trigueirao@gmail.com')
+                  }
+                >
+                  @laura.trigueirao
+                </button>
               </div>
             </div>
           </div>

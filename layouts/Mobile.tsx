@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export const Mobile: React.FC = () => {
+  const router = useRouter();
+
   return (
     <>
       <section className="h-screen bg-beige">
@@ -173,15 +176,33 @@ export const Mobile: React.FC = () => {
             <div className="flex justify-around text-center">
               <div>
                 <p className="font-cursive">Instagram</p>
-                <p>@laura.trigueirao</p>
+                <button
+                  onClick={() =>
+                    router.push('https://www.instagram.com/laura.trigueirao/')
+                  }
+                >
+                  @laura.trigueirao
+                </button>
               </div>
               <div>
                 <p className="font-cursive">Behance</p>
-                <p>@laura.trigueirao</p>
+                <button
+                  onClick={() =>
+                    router.push('https://www.behance.net/trigueiraolaura')
+                  }
+                >
+                  @laura.trigueirao
+                </button>
               </div>
               <div>
                 <p className="font-cursive">Email</p>
-                <p>@laura.trigueira</p>
+                <button
+                  onClick={() =>
+                    router.push('mailto:laura.trigueirao@gmail.com')
+                  }
+                >
+                  @laura.trigueirao
+                </button>
               </div>
             </div>
           </div>
