@@ -50,7 +50,10 @@ export const Desktop: React.FC = () => {
               stories through the <br />
               senses.
             </p>
-            <button className="mt-6 font-cursive text-2xl text-darkBlue font-bold">
+            <button
+              className="mt-6 font-cursive text-2xl text-darkBlue font-bold"
+              onClick={() => router.push('/blog')}
+            >
               Read Me
             </button>
             <div className="absolute -top-40 right-0">
@@ -159,7 +162,10 @@ export const Desktop: React.FC = () => {
               is the path you want to follow. <br />
               If you have any doubts, contact me.
             </p>
-            <button className="font-cursive text-2xl text-darkBlue font-bold">
+            <button
+              className="font-cursive text-2xl text-darkBlue font-bold"
+              onClick={() => router.push('/portfolio')}
+            >
               More Portfolio
             </button>
             <div className="relative">
